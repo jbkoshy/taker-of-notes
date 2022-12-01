@@ -47,7 +47,7 @@ function createNewNote(body, notesArray) {
 }
 
 app.post('./api/notes', (req, res) => {
-    const newNote = createNewNote(req.body, theNotes);
+    const newNote = createNewNote(req.body, allNotes);
     res.json(newNote);
 });
 
@@ -68,10 +68,10 @@ function deleteNote(id, notesArray) {
 }
 
 app.delete('./api/notes/:id', (req, res) => {
-    deleteNote(req.params.id, theNotes);
+    deleteNote(req.params.id, allNotes);
     res.json(true);
 });
 
 app.listen(PORT, () => {
-    console.log(`The API server is now on port ${PORT}!`);
+    console.log(`The API server is now on port  http://localhost:${PORT}`);
 });
