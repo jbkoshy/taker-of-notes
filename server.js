@@ -5,14 +5,14 @@ const fs = require('fs');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const theNotes = require('./db/db.json');
+const allNotes = require('./db/db.json');
 
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/api/notes', (req, res) => {
-    res.json(theNotes.slice(1));
+    res.json(allNotes.slice(1));
 });
 
 app.get('/', (req, res) => {

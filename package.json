@@ -1,0 +1,24 @@
+{
+  "name": "taker-of-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbkoshy/taker-of-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbkoshy/taker-of-notes/issues"
+  },
+  "homepage": "https://github.com/jbkoshy/taker-of-notes#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
