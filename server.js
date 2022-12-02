@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/api/notes', (req, res) => {
-    res.json(allNotes.slice(1));
+    res.json(allNotes);
 });
 
 app.get('/', (req, res) => {
@@ -32,11 +32,8 @@ function createNewNote(body, notesArray) {
     if (!Array.isArray(notesArray))
     notesArray = [];
 
-    if (notesArray.length === 0)
-    notesArray.push(0);
-
-    body.id = notesArray[0];
-    notesArray[0]++;
+    body.id = allNotes.length + 1;
+    
 
     notesArray.push(newNote);
     fs.writeFileSync(
