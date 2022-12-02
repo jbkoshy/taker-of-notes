@@ -38,7 +38,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 The following images show the web application's appearance and functionality:
 
-<img width="1440" alt="Screen Shot 2022-12-01 at 5 58 02 PM" src="https://user-images.githubusercontent.com/112911066/205188132-25e78579-1ddd-460b-8562-5dff1c5232ae.png">
+
+<img width="1440" alt="Screen Shot 2022-12-01 at 6 35 34 PM" src="https://user-images.githubusercontent.com/112911066/205188225-a211c494-f963-4b2f-b4c9-dfad4f23c719.png">
 
 
 ## Links
