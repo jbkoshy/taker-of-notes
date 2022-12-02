@@ -46,7 +46,7 @@ function createNewNote(body, notesArray) {
     return newNote
 }
 
-app.post('./api/notes', (req, res) => {
+app.post('/api/notes', (req, res) => {
     const newNote = createNewNote(req.body, allNotes);
     res.json(newNote);
 });
@@ -67,7 +67,7 @@ function deleteNote(id, notesArray) {
     }
 }
 
-app.delete('./api/notes/:id', (req, res) => {
+app.delete('/api/notes/:id', (req, res) => {
     deleteNote(req.params.id, allNotes);
     res.json(true);
 });
